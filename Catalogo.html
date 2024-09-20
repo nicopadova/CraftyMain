@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="popup/popup.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&amp;display=swap" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden" onload="loadTemplate(),loadCategories(),loadProd()">
+    <header class="my-4">
+    </header>
+
+    <div class="contenuto">
+        <div class="accordion" id="accordion" onclick="hideSidebar()">
+            <div class="accordion-item">
+                <h2 class="accordion-header" >
+                    <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Filtri <i class="fa-solid fa-filter"></i>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion">
+                </div>
+            </div>
+
+        </div>
+        <section class="layout2">
+            <div class="sidebar hide" id="sidebar">
+                <ul class="list-group my-5">
+                    <li class="list-group-item fw-medium" id="listaCat">
+                        <h5>Categorie</h5>
+                    </li>
+                    <li class="list-group-item fw-medium">
+                        <h5>Valutazione</h5>
+                        <div class="stelle" id="rating">
+                            <input type="radio" name="star" id="star-1" value="1" onclick="selectScore(5)" />
+                            <label for="star-1">
+                                <span> <i class="fa-solid fa-star fa-xs" aria-hidden="true"></i> </span>
+                            </label>
+
+                            <input type="radio" name="star" id="star-2" value="2" onclick="selectScore(4)" />
+                            <label for="star-2">
+                                <span> <i class="fa-solid fa-star fa-xs" aria-hidden="true"></i> </span>
+                            </label>
+
+                            <input type="radio" name="star" id="star-3" value="3" onclick="selectScore(3)" />
+                            <label for="star-3">
+                                <span> <i class="fa-solid fa-star fa-xs" aria-hidden="true"></i> </span>
+                            </label>
+
+                            <input type="radio" name="star" id="star-4" value="4" onclick="selectScore(2)" />
+                            <label for="star-4">
+                                <span> <i class="fa-solid fa-star fa-xs" aria-hidden="true"></i> </span>
+                            </label>
+
+                            <input type="radio" name="star" id="star-5" value="5" onclick="selectScore(1)" />
+                            <label for="star-5">
+                                <span> <i class="fa-solid fa-star fa-xs" aria-hidden="true"></i> </span>
+                            </label>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-bottom-0 fw-medium">
+                        <h5>Prezzo</h5>
+                        <label class="cr-wrapper">
+                            <input class="form-check-input" name="flexRadioDefault" type="radio"
+                                onclick="selectPrice(0,25)" />
+                            <div class="cr-input"></div>
+                            <span>Meno di 25€ </span>
+                        </label>
+                        <label class="cr-wrapper">
+                            <input class="form-check-input" name="flexRadioDefault" type="radio"
+                                onclick="selectPrice(25,50)" />
+                            <div class="cr-input"></div>
+                            <span>da 25€ a 50€</span>
+                        </label>
+                        <label class="cr-wrapper">
+                            <input class="form-check-input" name="flexRadioDefault" type="radio"
+                                onclick="selectPrice(50,75)" />
+                            <div class="cr-input"></div>
+                            <span>da 50€ a 75€</span>
+                        </label>
+                        <label class="cr-wrapper">
+                            <input class="form-check-input" name="flexRadioDefault" type="radio"
+                                onclick="selectPrice(75,100)" />
+                            <div class="cr-input"></div>
+                            <span>da 75€ a 100€</span>
+                        </label>
+                        <label class="cr-wrapper">
+                            <input class="form-check-input" name="flexRadioDefault" type="radio"
+                                onclick="selectPrice(100,99999)" />
+                            <div class="cr-input"></div>
+                            <span>Oltre 100€</span>
+                        </label>
+
+                    </li>
+
+                    <button class="list-group-item rounded btn border-bottom-0 fw-medium btn-lg"
+                        onclick="filterProd()">Filtra</button>
+
+
+                </ul>
+            </div>
+
+            <div class="my-5">
+                <div class="container text-center bg-none">
+                    <div class="row m-1" id="listaProd">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/4bea790e60.js" crossorigin="anonymous"></script>
+    <script src="popup/popup.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/catalogo.js"></script>
+</body>
+
+</html>

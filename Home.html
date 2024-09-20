@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="popup/popup.css">
+    <link rel="stylesheet" href="css/Home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&amp;display=swap" rel="stylesheet">
+</head>
+
+
+<body class="overflow-x-hidden" onload="loadTemplate()">
+    <!--HEADER-->
+    <header class="my-4">
+
+    </header>
+
+
+    <!--INIZIO LAVORO FEDE-->
+    <div class="contenutoBello">
+        <!--CAROSELLO-->
+
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner ">
+                <div class="carousel-item active mb-4">
+                    <img src="img/6.png" class="d-block w-100 h-200 img-fluid" id="imgCarosello1" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/2.png" class="d-block w-100 h-200" id="imgCarosello2" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/3.png" class="d-block w-100 h-200" id="imgCarosello3" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev freccia" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next freccia" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!--MOSAICO-->
+        <section class="pt-12">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-12 col-md-5 col-lg-4 d-flex flex-column mb-4 ">
+                        <!-- Card -->
+                        <div class="card mb-7 text-body imgcarta " id=""
+                            style="min-height: 400px; background-image: url(img/tizio1.png); background-size:160%; background-repeat: no-repeat;">
+                            <!-- Background -->
+                            <div class="card-bg">
+                                <div class="card-bg-img bg-cover" style="background-image: url();">
+                                </div>
+                            </div>
+                            <!-- Body -->
+                            <div class="card-body my-auto text-center">
+                                <!-- Heading -->
+                                <h4 class=" testoMosaico1" style="color: #DEDBD2;">Men's Collection</h4>
+                                <!-- Link -->
+                                <a class="btn my-2 btn-link stretched-link text-decoration-none"
+                                    href="Catalogo.html?category=3"><!-- Mettere Link alla pagina della categoria-->
+                                    Shop Now<i class="fe fe-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-7 col-lg-8 d-flex flex-column  mb-4">
+                        <!-- Card -->
+                        <div class="card mb-7 text-body"
+                            style="min-height: 400px; background-image: url(img/casa3.png); background-size:130%; background-repeat: no-repeat;">
+                            <!-- Background -->
+                            <div class="card-bg">
+                                <div class="card-bg-img bg-cover" style="background-image: url(img/);">
+                                </div>
+                            </div>
+                            <!-- Body -->
+                            <div class="card-body my-auto px-md-10 text-center text-md-start" style="color: #5A3A31;">
+                                <!-- Circle -->
+                                <div class="card-circle card-circle-lg card-circle-end text-center">
+                                    <p><strong>Fino a </strong>
+                                        <span class="fs-4 fw-bold">30%</span><br>
+                                    <p>sui prodotti selezionati</p>
+                                </div>
+                                <!-- Heading -->
+                                <h4 class="mb-0">Articoli per la casa</h4>
+                                <!-- Link -->
+                                <a class="btn my-2 btn-link stretched-link text-decoration-none"
+                                    href="Catalogo.html?category=1">
+                                    Shop Now <i class="fe fe-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-7 col-lg-8 d-flex flex-column mb-4">
+                        <!-- Card -->
+                        <div class="card mb-5 mb-md-0 text-body"
+                            style="min-height: 400px; background-image: url(img/tizia2.png); background-size:cover; background-repeat: no-repeat;">
+                            <!-- Background -->
+                            <div class="card-bg">
+                                <div class="card-bg-img bg-cover" style="background-image: url();">
+                                </div>
+                            </div>
+                            <!-- Body -->
+                            <div class="card-body my-auto px-md-10 text-center text-md-start">
+                                <!-- Heading -->
+                                <h4 class="mb-0" style="color: #DEDBD2;">Women's Collection</h4>
+                                <!-- Link -->
+                                <a class="btn my-2 btn-link stretched-link text-center text-decoration-none"
+                                    href="Catalogo.html?category=4">
+                                    Shop Now<i class="fe fe-arrow-right ms-2" style="color:#DEDBD2;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-5 col-lg-4 d-flex flex-column mb-4">
+                        <!-- Card -->
+                        <div class="card text-white"
+                            style="min-height: 400px; background-image: url(img/accessori.png); background-size:cover; background-repeat: no-repeat;">
+                            <!-- Background -->
+                            <div class="card-bg">
+                                <div class="card-bg-img bg-cover" style="background-image: url();">
+                                </div>
+                            </div>
+                            <!-- Body -->
+                            <div class="card-body my-auto text-center" style="color: #5A3A31;">
+                                <!-- Heading -->
+                                <h4 class="mb-0">Accessories</h4>
+                                <!-- Link -->
+                                <a class="btn btn-link stretched-link text-decoration-none"
+                                    href="Catalogo.html?category=2">
+                                    Shop Now<i class="fe fe-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--TOP SELLER PRODOTTI-->
+        <section class="py-12 mt-5 ">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+
+                        <!-- Heading -->
+                        <h2 class="mb-4 text-center titolo">Top del mese</h2>
+                    </div>
+                </div>
+                <div class="tab-content" id="top-sellers">
+                    <div class="tab-pane fade show active">
+                        <div class="row" id="topSellersTab">
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--COUNTDOWN OFFERTE LIMITATE-->
+        <section class="py-3 bg-cover"
+            style="background-image: url(img/casa3.png); background-size:200%; background-repeat: no-repeat;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!--CARD 1 -->
+                    <div class="col-10 col-md-6 col-lg-6">
+                        <!-- Heading -->
+                        <h3 class="mb-7 ">
+                            Saldi Estivi <br>Sconti fino al 50%
+                        </h3>
+
+                        <!-- Counter -->
+                        <div class="d-flex mb-4">
+                            <div class="text-center">
+                                <div class="fs-1 fw-bolder" id="days">10</div>
+                                <div class="heading-xxs text-muted">Giorni</div>
+                            </div>
+                            <div class="px-1 px-md-4">
+                                <div class="fs-2 fw-bolder">:</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="fs-1 fw-bolder" id="hours">00</div>
+                                <div class="heading-xxs text-muted">Ore</div>
+                            </div>
+                            <div class="px-1 px-md-4">
+                                <div class="fs-2 fw-bolder">:</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="fs-1 fw-bolder" id="minutes">60</div>
+                                <div class="heading-xxs text-muted">Minuti</div>
+                            </div>
+                            <div class="px-1 px-md-4">
+                                <div class="fs-2 fw-bolder">:</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="fs-1 fw-bolder" id="seconds">05</div>
+                                <div class="heading-xxs text-muted">Secondi</div>
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <a class="btn text-decoration-none"
+                            href="Catalogo.html"><!-- Mettere Link alla pagina della categoria-->
+                            Shop Now <i class="fe fe-arrow-right ms-2 "></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--RECENSIONI-->
+        <section class="pt-5 pb-5 mb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 col-xl-6 text-center">
+                        <!-- Preheading -->
+                        <h6 class="heading-xxs mb-3 text-400 titolo">
+                            Cosa dicono dei nostri prodotti
+                        </h6>
+
+                        <!-- Heading -->
+                        <h2 class="mb-4 titolo">Le ultime recensioni</h2>
+                    </div>
+                </div>
+
+                <!-- Carosello delle Recensioni -->
+                <div id="carouselExampleAutoplaying" class="carousel slide caroselloRecensioni" data-bs-ride="carousel">
+                    <div class="carousel-inner" id="last-reviews">
+                        <div class=" carousel-item active">
+                            <div class="container m-2"> <!--1-->
+
+                                <div class="row row-cols-1 row-cols-sm-2 justify-content-center p-5">
+                                    <div class="col-8">
+                                        <div class="card mb-3" style="max-width: 580px; min-width: 210px;">
+                                            <div class="row rigaInside">
+                                                <div class="row">
+                                                    <div class="col-6 col-md-4 col-lg-4">
+                                                        <img src="img/tizio1.png" class=" rounded m-3"
+                                                            style="max-width: 100px;">
+                                                    </div>
+                                                    <div class="col-10 col-md-6 m-4">
+                                                        <div class="col  text-start ">
+                                                            <h5 class=""><!--Titolo oggetto--></h5>
+                                                        </div>
+                                                        <div class="col-12 stars"> <!--Stelle-->
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-11 col-md-11 col-lg-11 ms-3 text-start mb-3">
+                                                    <p class="card-text"><!-- testo recensione--></p>
+                                                </div>
+                                                <div class="col-11 col-md-11 col-lg-11 ms-3 text-start mb-3">
+                                                    <p class="card-text-name"><!--Nome Recensore--></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <div class="card" style="max-width: 580px;">
+                                            <div class="row rigaInside">
+                                                <div class="row">
+                                                    <div class="col-6 col-md-5 col-lg-4">
+                                                        <img src="img/tizio1.png" class=" rounded m-3"
+                                                            style="max-width: 100px;">
+                                                    </div>
+                                                    <div class="col-10 col-md-5 m-4">
+                                                        <div class="col  text-start ">
+                                                            <h5 class=""><!--Titolo oggetto--></h5>
+                                                        </div>
+                                                        <div class="col-12 stars"> <!--Stelle-->
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-11 col-md-11 col-lg-11 ms-3 text-start mb-3">
+                                                    <p class="card-text"><!-- testo recensione--></p>
+                                                </div>
+                                                <div class="col-11 col-md-11 col-lg-11 ms-3 text-start mb-3">
+                                                    <p class="card-text-name"><!--Nome Recensore--></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" carousel-item">
+                            <div class="container m-2">
+
+                                <div class="row row-cols-1 row-cols-sm-2 justify-content-center">
+                                    <div class="col-8">
+                                        <div class="card" style="max-width: 580px;">
+                                            <div class="row rigaInside">
+                                                <div class="row">
+                                                    <div class="col-6 col-md-5 col-lg-4">
+                                                        <img src="img/tizio1.png" class=" rounded m-3"
+                                                            style="max-width: 100px;">
+                                                    </div>
+                                                    <div class="col-10 col-md-5 m-4">
+                                                        <div class="col  text-start ">
+                                                            <h5 class=""><!--Titolo oggetto--></h5>
+                                                        </div>
+                                                        <div class="col-12 stars"> <!--Stelle-->
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-11 col-md-11 col-lg-11 ms-3 text-start mb-3">
+                                                    <p class="card-text"><!-- testo recensione--></p>
+                                                </div>
+                                                <div class="col-11 col-md-11 col-lg-11 ms-3 text-start mb-3">
+                                                    <p class="card-text-name"><!--Nome Recensore--></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <div class="card" style="max-width: 580px;">
+                                            <div class="row rigaInside">
+                                                <div class="row">
+                                                    <div class="col-6 col-md-5 col-lg-4">
+                                                        <img src="img/tizio1.png" class=" rounded m-3"
+                                                            style="max-width: 100px;">
+                                                    </div>
+                                                    <div class="col-10 col-md-5 m-4">
+                                                        <div class="col  text-start ">
+                                                            <h5 class=""><!--Titolo oggetto--></h5>
+                                                        </div>
+                                                        <div class="col-12 stars"> <!--Stelle-->
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-11 col-md-11 col-lg-11 ms-3 text-start mb-3">
+                                                    <p class="card-text"><!-- testo recensione--></p>
+                                                </div>
+                                                <div class="col-11 col-md-11 col-lg-11 ms-3 text-start mb-3">
+                                                    <p class="card-text-name"><!--Nome Recensore--></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev rounded-3 bottoneRecensione bottoneprim" type="button"
+                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next rounded-3 bottoneRecensione bottonedop" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Carosello delle Recensioni 
+                <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"
+                    style="background-color: #DEDBD2;">
+                    <div class="carousel-inner " id="last-reviews">
+                        Le recensioni verranno aggiunte dinamicamente qui 
+                    </div>
+                    <button class="carousel-control-prev frecciareview" type="button" data-bs-target="#reviewCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next frecciareview" type="button" data-bs-target="#reviewCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>-->
+        </section>
+
+
+
+
+
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="popup/popup.js"></script>
+    <script src="js/template.js"></script>
+    <script src="https://kit.fontawesome.com/4bea790e60.js" crossorigin="anonymous"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

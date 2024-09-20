@@ -1,0 +1,64 @@
+/* Pagina amministratore */
+.sidebarDeskstop{
+    min-height:760px;
+}
+.sidebarPhone{
+    min-height:760px;
+}
+.navigazioneSideB:hover{
+    background-color:#5E7C50;
+    border-radius: 5px;
+    color: #DEDBD2;
+}
+.navBarLat{
+    color: #2F3D14;
+}
+.navBarLat:hover{
+    color: #DEDBD2;
+}
+.dropdown-item{
+    color: #2F3D14;
+}
+.table{
+    --bs-table-color:#2F3D14;
+    --bs-table-border-color: #2f3d1473;
+    
+}
+#myChart{
+    color: #2F3D14;
+}
+
+/* Pagina Categorie */
+.btn{
+    background-color: #2F3D14;
+}
+#btnElimina, #btnModifica, #btnVisualizza{
+    background-color: #2F3D14;
+    color: #DEDBD2 ;
+    border-radius: 5px;
+}
+#btnModifica:hover, #btnElimina:hover, #btnVisualizza:hover{
+    background-color: #B68125;
+    color: #DEDBD2 ;
+}
+#btnAggiungi{
+    background-color:#5E7C50;
+}
+#btnAggiungi:hover{
+    background-color:#B68125;
+}
+.row{
+    margin-right:calc(-.0 * var(--bs-gutter-x));
+}
+.modal-admin{
+    background: #DEDBD2;
+}
+.dropdown-menu-menu {
+    width:160px;
+}
+.contenutocellabtn{
+}
+
+#tableProducts{
+    max-height: 500%;
+}

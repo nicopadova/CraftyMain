@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lavora con noi - Crafty</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="popup/popup.css">
+    <link rel="stylesheet" href="popup/popup.css">
+    <style>
+        .contenuto {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+
+        .contenuto {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .card {
+            margin-bottom: 30px;
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .offerte-lavoro {
+            margin-top: 40px;
+
+            padding: 30px;
+
+            width: 100%;
+            /* height: 40px; */
+
+            justify-content: center;
+            display: flex;
+            margin: 15px auto;
+            padding: 12px;
+
+            outline: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .cv-form {
+            margin-top: 40px;
+            border: 2px solid #5A3A31;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .form-cv {
+            width: 100%;
+            /* height: 40px; */
+            background: #e0dede;
+            justify-content: center;
+            display: flex;
+            margin: 15px auto;
+            padding: 12px;
+            border: 2px solid #5a3a3147;
+            outline: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .contenuto-lavora{
+            color: #2F3D14;
+        }
+    </style>
+</head>
+
+<body onload="loadTemplate()" class="overflow-x-hidden">
+    <header class="my-4">
+    </header>
+    <div class="contenuto contenuto-lavora">
+        <div class="container">
+            <h1 class="text-center">Lavora con noi</h1>
+            <p class="text-center">Unisciti al nostro team e contribuisci a creare qualcosa di straordinario!</p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card offerte-lavoro">
+                        <img src="img/sviluppatoreWeb.jpeg" class="card-img-top" alt="Immagine Sviluppatore Web">
+                        <div class="card-body contenuto-lavora">
+                            <h5 class="card-title"><i class="fas fa-code"></i> Posizione 1: Sviluppatore Web</h5>
+                            <p><strong>Località:</strong> Milano, Italia</p>
+                            <p><strong>Tipo di Contratto:</strong> Tempo pieno</p>
+                            <p class="card-text">Stiamo cercando uno sviluppatore web con esperienza in HTML, CSS,
+                                JavaScript e Bootstrap per unirsi al nostro team.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card offerte-lavoro">
+                        <img src="img/graphicDesigner.jpeg" class="card-img-top" alt="Immagine Graphic Designer">
+                        <div class="card-body contenuto-lavora">
+                            <h5 class="card-title"><i class="fas fa-paint-brush"></i> Posizione 2: Graphic Designer</h5>
+                            <p><strong>Località:</strong> Roma, Italia</p>
+                            <p><strong>Tipo di Contratto:</strong> Tempo pieno</p>
+                            <p class="card-text">Cerchiamo un designer grafico creativo con esperienza in Adobe
+                                Photoshop e Illustrator.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card offerte-lavoro">
+                        <img src="img/digitalMarketing.jpeg" class="card-img-top"
+                            alt="Immagine Digital Marketing Specialist">
+                        <div class="card-body contenuto-lavora">
+                            <h5 class="card-title"><i class="fas fa-chart-line"></i> Posizione 3: Digital Marketing
+                                Specialist</h5>
+                            <p><strong>Località:</strong> Firenze, Italia</p>
+                            <p><strong>Tipo di Contratto:</strong> Part-time</p>
+                            <p class="card-text">Cerchiamo uno specialista di marketing digitale con esperienza in SEO,
+                                SEM e gestione dei social media.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card offerte-lavoro">
+                        <img src="img/salesManager.jpeg" class="card-img-top" alt="Immagine Sales Manager">
+                        <div class="card-body contenuto-lavora">
+                            <h5 class="card-title"><i class="fas fa-user-tie"></i> Posizione 4: Sales Manager</h5>
+                            <p><strong>Località:</strong> Torino, Italia</p>
+                            <p><strong>Tipo di Contratto:</strong> Tempo pieno</p>
+                            <p class="card-text">Stiamo cercando un sales manager con esperienza nella vendita B2B e
+                                ottime capacità comunicative.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6 offset-md-3">
+                    <div class="card offerte-lavoro">
+                        <img src="img/customerSupport.webp" class="card-img-top" alt="Immagine Customer Support">
+                        <div class="card-body contenuto-lavora">
+                            <h5 class="card-title"><i class="fas fa-headset"></i> Posizione 5: Customer Support</h5>
+                            <p><strong>Località:</strong> Napoli, Italia</p>
+                            <p><strong>Tipo di Contratto:</strong> Tempo pieno</p>
+                            <p class="card-text">Cerchiamo una persona con esperienza nel supporto clienti e ottime
+                                capacità di problem solving.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6 offset-md-3">
+                    <h2 class="mt-5 text-center">Invia la tua candidatura</h2>
+                    <div class="cv-form">
+                        <form>
+                            <div class="form-group">
+                                <!-- <label for="name">Nome</label> -->
+                                <input type="text" class="form-control form-cv" id="name"
+                                    placeholder="Inserisci il tuo nome">
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="email">Email</label> -->
+                                <input type="email" class="form-control form-cv" id="email"
+                                    placeholder="Inserisci la tua email">
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="phone">Telefono</label> -->
+                                <input type="tel" class="form-control form-cv" id="phone"
+                                    placeholder="Inserisci il tuo numero di telefono">
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="position">Posizione Desiderata</label> -->
+                                <select class="form-control form-cv" id="position">
+                                    <option>Sviluppatore Web</option>
+                                    <option>Graphic Designer</option>
+                                    <option>Digital Marketing Specialist</option>
+                                    <option>Sales Manager</option>
+                                    <option>Customer Support</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="resume">Carica il tuo CV</label> -->
+                                <input type="file" class="form-control-file form-cv" id="resume">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Invia Candidatura</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/template.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="popup/popup.js"></script>
+</body>
+
+</html>

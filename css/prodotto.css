@@ -1,0 +1,200 @@
+#btnCart {
+    background-color: #5E7C50;
+}
+
+#btnCart:hover {
+    background-color: #B68125;
+}
+
+.accordion-header {
+    background-color: #DEDBD2;
+}
+
+.accordion-button {
+    color: #2f3d14;
+    background-color: #DEDBD2;
+}
+
+.accordion-body {
+    color: #2f3d14;
+    background-color: #DEDBD2;
+}
+
+.accordion-button:hover {
+    color: #DEDBD2;
+    background-color: #B68125;
+}
+
+.accordion-button:active {
+    color: #DEDBD2;
+    background-color: #B68125;
+}
+
+.accordion-button:active {
+    color: #DEDBD2;
+}
+
+.accordion-button:not(.collapse) {
+    color: #2f3d14;
+}
+
+.layoutProd {
+    width: 100%;
+
+    display: flex;
+    gap: 16px;
+
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.grow1Prod {
+    flex-grow: 1;
+}
+
+.porcopadding {
+    padding-left: 1px;
+}
+
+.recensione {
+    background-color: #DEDBD2;
+    border-color: #DEDBD2;
+}
+
+#tags>a {
+    color: #2f3d14;
+    text-decoration: none;
+}
+
+#tags>a:hover {
+    color: #B68125;
+}
+
+#imgc1,
+#imgc2,
+#imgc3,
+#imgc4 {
+    width: 100%;
+    /* Set to 100% of the container's width */
+    max-width: 700px;
+    /* Adjust the max-width as needed */
+    height: 100%;
+    /* Set a fixed height */
+    max-height: 500px;
+    object-fit: cover;
+    /* Or use 'cover' based on your preference */
+}
+
+#img1,
+#img2,
+#img3,
+#img4 {
+    width: 100%;
+    /* Set to 100% of the container's width */
+    max-width: 100px;
+    /* Adjust the max-width as needed */
+    height: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    /* Or use 'cover' based on your preference */
+}
+
+.col-1 img {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.col-1 img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #B68125;
+    outline: none;
+    box-shadow: none;
+    color: #DEDBD2;
+}
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    #imgc1,
+    #imgc2,
+    #imgc3,
+    #imgc4 {
+        width: 100%;
+        /* Set to 100% of the container's width */
+        max-width: 500px;
+        /* Adjust the max-width as needed */
+        height: 100%;
+        /* Set a fixed height */
+        max-height: 500px;
+        object-fit: cover;
+        /* Or use 'cover' based on your preference */
+    }
+
+    #img1,
+    #img2,
+    #img3,
+    #img4 {
+        display: none;
+        flex-direction: row;
+    }
+}
+
+.soloStar{
+    color: #5E7C50;
+}
+
+.soloStar:hover{
+    color: #2f3d14;
+}
+
+.form-floating{
+    border-color: #5E7C50;
+}
+
+.stelle {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-align: end;
+}
+
+.stelle input[type="radio"] {
+    display: none;
+}
+
+.stelle label {
+    font-size: 1.5em;
+    color: #5E7C50;
+    cursor: pointer;
+}
+
+.stelle label i {
+    transition: color 0.2s, transform 0.2s;
+}
+
+.stelle input[type="radio"]:checked ~ label i,
+.stelle label:hover i,
+.stelle label:hover ~ label i {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #2f3d14;
+    transform: scale(1.2);
+}
+
+.stelle input[type="radio"]:checked ~ label i:before {
+    content: '\f005';
+}
+
+.bottone-recensione{
+    background-color: #B68125;
+    font-weight: 600;
+}
+.bottone-recensione:hover{
+    background-color: #5E7C50;
+    font-weight: 600;
+}

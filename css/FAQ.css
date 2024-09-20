@@ -1,0 +1,157 @@
+/*Pagina FAQs*/
+
+/*Navbar movimento FAQs*/
+#navbarina {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #5e7c5081;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    float: none;
+    color: #2F3D14 !important;
+}
+
+ol.breadcrumb {
+    margin-bottom: 0%;
+    color: #2F3D14;
+}
+
+#navPag {
+    margin-left: 0%;
+    color: #2F3D14;
+}
+
+#navPag:hover {
+    color: #DEDBD2;
+}
+
+ol.breadcrumb {
+    margin-left: 2%;
+    color: #2F3D14;
+}
+
+/*Card FAQs*/
+#faqDomande,
+#faqColonne {
+    color: #2F3D14;
+    margin: 3%;
+}
+
+#cardFaq {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 3%;
+}
+
+.cartaSingola {
+    margin: 3%;
+    padding: 22px 15px 18px 21px;
+    border: 2pt solid var(#2F3D14, #2F3D14);
+    border-radius: 8px;
+    height: 128px;
+}
+
+.cartaSingola:hover {
+    background-color: #5e7c5068;
+}
+
+.card-title {
+    padding: 1%;
+    color: #2F3D14;
+}
+
+p {
+    color: #2F3D14;
+}
+
+strong {
+    color: #2F3D14;
+}
+
+/*Colonne FAQs*/
+
+li {
+    color: #2F3D14; 
+    text-decoration:none;
+}
+
+.proviamo{
+    justify-content: space-around;
+    justify-items: center;  
+}
+
+.column-title{
+    color: #2F3D14 !important;
+}
+
+.linkFAQ{
+    color: #2F3D14;
+    text-decoration:none;
+}
+
+.linkFAQ:hover{
+    color: #B68125;
+    font-weight: 600;
+}
+
+/*Sotto-Pagina 1Stato ordine FAQs*/
+
+#titoloPag1{
+    color: #2F3D14;
+    margin: 2%;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #2F3D14 var(--bs-accordion-active-color);
+    background-color: #5e7c5097;
+}
+.accordion-button:not(.collapsed)::after {
+    color: #2F3D14;
+}
+
+#bottoneAccordo{
+    color: #2F3D14;
+}
+
+.accordion-button:hover{
+    font-weight:500;
+    border: 1pt solid var(#2F3D14);
+    background-color: #dedbd283;
+}
+
+.accordion{
+    color: #2F3D14;
+    border-color: #5e7c5097;
+    background-color: #DEDBD2;
+    margin-bottom: 3%;
+}
+
+.accordion-body, .accordion-header{
+    color: #2F3D14;
+}
+
+#riquadroAssistenza{
+    margin-bottom: 3%;
+}
+
+#cardAssis{
+    margin: 3%;
+}
+
+.votazione{
+    background-color: #5A3A31;
+}
+
+.votazione:hover{
+    background-color: #2F3D14;
+}
+.messaggio{
+    border: 2%;
+    border-color: #2F3D14;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="popup/popup.css">
+    <link rel="stylesheet" href="css/FAQ.css">
+    <link rel="stylesheet" href="css/1StatoOrdine.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&amp;display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadTemplate()" class="overflow-x-hidden">
+    <!--HEADER-->
+    <header class="my-4">
+
+    </header>
+
+
+    <!--INIZIO LAVORO FEDE-->
+
+    <!--NAVIGAZIONE PAGINE-->
+    <div class="contenuto">
+        <nav style="--bs-breadcrumb-divider: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&quot;);"
+            aria-label="breadcrumb" id="navbarina">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="Home.html" id="navPag">Home</a></li>
+                <li class="breadcrumb-item "><a href="FAQ.html" id="navPag">FAQs</a></li>
+                <li class="breadcrumb-item active" aria-current="page" id="navPag"><strong>Spedizione</strong></li>
+            </ol>
+        </nav>
+
+        <!--FAQ-SERVIZIO CLIENTI-->
+        <h3 class="text-start" id="titoloPag1">Come trovare i migliori articoli su Crafty</h3>
+        <div style="--bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #5e7c5097, --bs-accordion-active-bg: #5e7c5097, --bs-accordion-active-color: #5e7c5097;"
+            class="accordion" id="accordionPanelsStayOpen">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" id="bottoneAccordo" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        <p>Come effettuare una ricerca per articoli</p>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p> I risultati di ricerca vengono ordinati in base alla pertinenza che gli articoli hanno
+                            rispetto
+                            ai termini della tua ricerca. È possibile modificare l'ordine l'opzione Ordina per che si
+                            trova
+                            sopra ai risultati di ricerca.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" id="bottoneAccordo" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        <p> Come applicare i filtri ai risultati di ricerca:</p>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p> Accanto tutti gli articoli, filtra i tuoi risultati in base al tempo di arrivo, Spedizione
+                            gratuita, o Prezzo. Scegli Tutti i filtri, per visualizzare un elenco completo di modi in
+                            cui puoi restringere i risultati, ad esempio:</p>
+                        <ul class="wt-list-unstyled wt-line-height-tight wt-text-body-01">
+                            <li class="wt-mb-xs-1 linkpagineFAQ">Offerte speciali, come articoli in offerta</li>
+                            <li class="wt-mb-xs-1 linkpagineFAQ">Categorie, come Casa e arredi o Arte e oggetti da
+                                collezione</li>
+                            <li class="wt-mb-xs-1 linkpagineFAQ">Spedizione, come spedizione gratuita</li>
+                            <li class="wt-mb-xs-1 linkpagineFAQ">Colore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-votes text-center my-4">
+                <span class="article-votes-question" style="color: #2F3D14;">Questo ha risolto il problema?</span>
+                <div class="article-votes-controls">
+                    <a href="FAQ.html" class="btn px-4 py-1 votazione">Sì</a>
+                    <a href="Contattaci.html" class="btn px-4 py-1 votazione">No</a>
+                </div>
+            </div>
+
+            <!--FAQ-SERVIZIO CLIENTI-->
+            <div class="container-fluid" id="riquadroAssistenza">
+                <div class="p-5 rounded " style="background-color :#5e7c5081; ">
+                    <div class="row " id="cardAssis">
+                        <div class="col-12 col-ms-6 ">
+                            <strong>
+                                <h7 style="color: #5A3A31;">CONTATTACI</h7>
+                            </strong>
+                            <h4 style="color: #2F3D14;">Hai bisogno di assistenza?
+                            </h4>
+                            <a href="Contattaci.html" class="btn messaggio">Inviaci un messaggio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="popup/popup.js"></script>
+    <script src="js/template.js"></script>
+    <script src="https://kit.fontawesome.com/4bea790e60.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

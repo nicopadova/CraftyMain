@@ -1,0 +1,398 @@
+/* Style accesso */
+.modal-content {
+    background-color: #00000000;
+    border: none;
+
+}
+
+.main-accesso {
+
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to bottom, #2F3D14, #5E7C50, #fff);
+}
+
+.main-accesso {
+
+    height: 840px;
+    overflow: hidden;
+    background-color: linear-gradient(to bottom, #E59114, #C35A42, #C35A42);
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+}
+
+#chk {
+    display: none;
+}
+
+.signup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.label-accesso {
+    color: #fff;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.select-accesso,
+.input-accesso {
+    width: 60%;
+    height: 40px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 15px auto;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.password-dimenticata {
+
+
+    justify-content: center;
+    display: flex;
+    margin: 15px auto;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.select-accesso {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #e0dede;
+    color: #000;
+    padding-left: 10px;
+    text-align-last: center;
+    height: 50px;
+}
+
+.tasto-accesso {
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: #B68125;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.tasto-modifica-profilo {
+    display: inline-flex;
+    /* Usa flexbox per centrare il testo */
+    align-items: center;
+    /* Allinea verticalmente al centro */
+}
+
+button:hover {
+    background: #5A3A31;
+}
+
+.login {
+    height: 610px;
+    background: linear-gradient(to bottom, #2F3D14, #5E7C50, #fff);
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+
+.login label {
+    color: #ffffff;
+    transform: scale(.6);
+}
+
+#chk:checked~.login {
+    transform: translateY(-550px);
+}
+
+#chk:checked~.login label {
+    transform: scale(1);
+}
+
+#chk:checked~.signup label {
+    transform: scale(.6);
+}
+
+.hidden {
+    display: none;
+}
+
+.fa-user {
+    cursor: pointer;
+}
+
+#edit-profile {
+    background: #2F3D14;
+}
+
+#edit-profile:hover {
+    background: #5A3A31;
+
+}
+
+.password-dimenticata {
+    color: #DEDBD2;
+}
+
+.password-dimenticata:hover {
+    color: #2F3D14;
+}
+
+
+@media (max-width: 768px) {
+    .modal-dialog {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        max-width: 100%;
+    }
+
+    .modal-content {
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .modal-body {
+        overflow-y: auto;
+        height: calc(100% - 56px);
+        /* Adjust height for the modal header if needed */
+    }
+}
+
+
+/* fine style accesso */
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #2F3D14
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h5 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.contenuto {
+    background-color: #DEDBD2
+}
+
+.btn {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color: #DEDBD2;
+}
+
+.btn:hover {
+    color: #DEDBD2;
+    background-color: #B68125;
+}
+
+.layout {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 20% 50% 10% 10%;
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.custom_input {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.input {
+    padding: 3px 10px;
+    width: 100%;
+    outline: none;
+    background: #DEDBD2;
+    color: #000000;
+    border: 3px solid #B68125;
+    border-radius: 20px;
+    transition: .3s ease;
+}
+
+
+
+.input::placeholder {
+    color: #DDDDDD;
+}
+
+.svg_icon {
+    position: absolute;
+    right: 17px;
+    fill: #2F3D14;
+    width: 20px;
+    height: 20px;
+}
+
+footer {
+    color: #DEDBD2;
+
+}
+
+.titolofooter {
+    color: #B68125;
+
+}
+
+.nav-link {
+    color: #DEDBD2;
+}
+
+.nav-link:hover {
+    color: #B68125;
+}
+
+.sm_header {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    .sm_header {
+        display: block;
+    }
+
+    .lg_header {
+        display: none;
+    }
+
+    .layout {
+        width: 100%;
+
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 8px;
+
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .colSpan4 {
+        grid-column: span 4;
+    }
+
+    .footer_tab {
+        margin: 1%;
+        justify-content: space-between;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+}
+
+/* dati profilo */
+.profile-page {
+    background-color: #DEDBD2;
+
+    padding-top: 30px;
+}
+
+.profile-container {
+    /* background-color: rgba(255, 255, 255, 0.7); 
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);  */
+    color: #DEDBD2;
+    padding: 30px;
+}
+
+.profile-title {
+    color: #DEDBD2;
+    font-weight: bold;
+}
+
+.profile-icon {
+    font-size: 50px;
+    color: #DEDBD2;
+}
+
+.profile-btn {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.profile-btn:hover {
+    background-color: #5E7C50;
+}
+
+.dropdown-menu {
+    background-color: #DEDBD2;
+    align-items: center;
+    justify-content: center;
+    width: 760%;
+}
+.dropdown-item:hover {
+    background-color: #5E7C50;
+    color: #DEDBD2
+}

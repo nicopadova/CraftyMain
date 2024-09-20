@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amministratore</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="popup/popup.css">
+    <link rel="stylesheet" href="css/PagAmministratore.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&amp;display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadTemplate(),loadOrdersForChart(),loadOrderDetailsForChart()" class="overflow-x-hidden">
+    <!--HEADER-->
+    <header class="my-4">
+
+    </header>
+
+
+    <!--INIZIO LAVORO FEDE-->
+
+    <!--Contenuto-->
+    <div class="contenuto">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--SIDEBAR-->
+                <nav
+                    class="col-md-4 col-lg-3 d-none d-md-block bg-light sidebar justify-content-evenly sidebarDeskstop">
+                    <div class="sidebar-sticky">
+                        <div class="d-flex flex-column flex-shrink-0 p-3">
+                            <h2 class="mx-4">Admin</h2>
+
+                            <hr>
+                            <ul class="nav nav-pills flex-column mb-auto">
+                                <li class="nav-item navigazioneSideB">
+                                    <a href="PagAmministratore.html" class="nav-link navBarLat" aria-current="page">
+                                        <i class="bi bi-house me-2"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="nav-item navigazioneSideB">
+                                    <a href="PagAmmCategories.html" class="nav-link navBarLat" aria-current="page">
+                                        <i class="bi bi-speedometer2 me-2"></i>
+                                        Categorie
+                                    </a>
+                                </li>
+                                <li class="nav-item navigazioneSideB">
+                                    <a href="PagAmmOrders.html" class="nav-link navBarLat" aria-current="page">
+                                        <i class="bi bi-table me-2"></i>
+                                        Ordini
+                                    </a>
+                                </li>
+                                <li class="nav-item navigazioneSideB">
+                                    <a href="PagAmmProducts.html" class="nav-link navBarLat" aria-current="page">
+                                        <i class="bi bi-cart me-2"></i>
+                                        Prodotti
+                                    </a>
+                                </li>
+                                <li class="nav-item navigazioneSideB">
+                                    <a href="PagAmmRecensioni.html" class="nav-link navBarLat" aria-current="page">
+                                        <i class="bi bi-chat-left-text me-2"></i>
+                                        Recensioni
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr>
+                            <div class="dropdown">
+                                <a href="#"
+                                    class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://github.com/R-Piccinini.png" alt="" width="32" height="32"
+                                        class="rounded-circle me-2">
+                                    <strong>FNPR</strong>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-menu text-small shadow">
+                                    <li><a class="dropdown-item" href="Home.html">Esci</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!--SIDEBAR PHONE -->
+                <div class="d-md-none col-2 d-block bg-light sidebar justify-content-evenly">
+                    <div class="d-flex link-body-emphasis " data-bs-toggle="tooltip" data-bs-placement="right"
+                        data-bs-original-title="Icon-only">
+                        <img src="assets/img/icons/logocrafty.png" width="100%" class="rounded-circle py-3">
+                    </div>
+                    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                        <li class="nav-item">
+                            <a href="PagAmministratore.html" class="nav-link navBarLat py-3 border-bottom rounded-0"
+                                aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right"
+                                aria-label="Dashboard" data-bs-original-title="Dashboard">
+                                <i class="bi bi-house"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="PagAmmCategories.html" class="nav-link navBarLat py-3 border-bottom rounded-0"
+                                data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Categories"
+                                data-bs-original-title="Categories">
+                                <i class="bi bi-speedometer2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="PagAmmOrders.html" class="nav-link navBarLat py-3 border-bottom rounded-0"
+                                data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Orders"
+                                data-bs-original-title="Orders">
+                                <i class="bi bi-table"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="PagAmmProducts.html" class="nav-link navBarLat py-3 border-bottom rounded-0"
+                                data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Products"
+                                data-bs-original-title="Products">
+                                <i class="bi bi-cart"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="PagAmmRecensioni.html" class="nav-link navBarLat py-3 border-bottom rounded-0"
+                                data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Review"
+                                data-bs-original-title="Review">
+                                <i class="bi bi-chat-left-text"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="dropdown border-top">
+                        <a href="#"
+                            class="d-flex align-items-center justify-content-center p-3 link-body-emphasis text-decoration-none dropdown-toggle"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/R-Piccinini.png" alt="mdo" width="24" height="24"
+                                class="rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-menu text-small shadow">
+                            <li><a class="dropdown-item" href="Home.html">Esci</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--DASHBOARD -->
+                <main role="main" class="col-10 col-md-8 col-lg-9 pt-3 px-3">
+                    <div class="chartjs-size-monitor"
+                        style="position: absolute; inset:0px; overflow:hidden; pointer-events:none; visibility:hidden; z-index: -1;">
+                        <div class="chartjs-size-monitor-expand"
+                            style="position:absolute; left:0; top:0; right:0; bottom:0; overflow:hidden; pointer-events:none; visibility:hidden; z-index:-1;">
+                            <div style="position:absolute; width:1000000px; height:1000000px; left:0; top:0"></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink"
+                            style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                            <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+                        </div>
+                    </div>
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center border-bottom">
+                        <h1 class="h2">Dashboard</h1>
+                    </div>
+
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center border-bottom">
+                        <h5 class="h5">Entrate Settimanali</h5>
+                    </div>
+
+                    <canvas class="my-4 chartjs-render-monitor" id="myChartWeek" width="1846" height="778"
+                        style="display: block; height: 389px; width: 923px;"></canvas>
+
+                    <div
+                        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center border-bottom">
+                        <h5 class="h5 mt-4">Entrate Mensili</h5>
+                    </div>
+
+                    <canvas class="my-4 chartjs-render-monitor" id="myChartMonth" width="1846" height="778"
+                        style="display: block; height: 389px; width: 923px;"></canvas>
+
+                    <h1 class="h2">Report</h1>
+                    <h5 class="h5 mt-4">Prodotto più venduto</h5>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-sm mb-5">
+                            <thead>
+                                <tr class="tabellareport">
+                                    <th>ID</th>
+                                    <th>Nome</th>
+                                    <th>Quantità</th>
+                                    <th>Venditore</th>
+                                    <th>Categoria</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabellareport">
+                            </tbody>
+                        </table>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+    </footer>
+
+
+    <!-- GRAFICO SETTIMANALE -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.1/dist/Chart.min.js"></script>
+
+    <!-- GRAFICO MENSILE-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.1/dist/Chart.min.js"></script>
+    <script>
+        // Variabili globali per i conteggi degli ordini
+        let ordersCountByDayOfWeek = {};
+        let ordersCountByMonth = {};
+
+        async function loadOrdersForChart() {
+            const ordersMessage = document.getElementById('orders-message');
+            const token = localStorage.getItem('authToken');
+
+            if (typeof token !== 'undefined') {
+                try {
+                    const response = await fetch('http://localhost:8080/orderDetails', {
+                        method: 'GET',
+                        headers: {
+                            'Authorization': token
+                        }
+                    });
+
+                    if (response.status === 200) {
+                        const orders = await response.json();
+                        if (orders.length > 0) {
+                            const ordersByDayOfWeek = {};
+                            const ordersByMonth = {};
+
+                            orders.forEach(order => {
+                                const date = new Date(order.ordine.data);
+                                const dayOfWeek = date.toLocaleDateString('it-IT', { weekday: 'long' });
+                                const month = date.toLocaleDateString('it-IT', { month: 'long' });
+
+                                if (!ordersByDayOfWeek[dayOfWeek]) {
+                                    ordersByDayOfWeek[dayOfWeek] = [];
+                                }
+                                for (let i = 0; i < (order.qnt * order.prezzo); i++) {
+                                    ordersByDayOfWeek[dayOfWeek].push({ id: order.id, data: order.ordine.data });
+                                }
+                                if (!ordersByMonth[month]) {
+                                    ordersByMonth[month] = [];
+                                }
+                                for (let i = 0; i < (order.qnt * order.prezzo); i++) {
+                                    ordersByMonth[month].push({ id: order.id, data: order.ordine.data });
+                                }
+                            });
+
+                            ordersCountByDayOfWeek = Object.fromEntries(
+                                Object.entries(ordersByDayOfWeek).map(([day, orders]) => [day, orders.length])
+                            );
+
+                            ordersCountByMonth = Object.fromEntries(
+                                Object.entries(ordersByMonth).map(([month, orders]) => [month, orders.length])
+                            );
+
+                            // Chiama la funzione per inizializzare il grafico settimanale
+                            initializeWeeklyChart();
+                            // Chiama la funzione per inizializzare il grafico mensile
+                            initializeMonthlyChart();
+
+                            console.log('Conteggio ordini per giorno della settimana:', ordersCountByDayOfWeek);
+                            console.log('Conteggio ordini per mese dell\'anno:', ordersCountByMonth);
+
+                        } else {
+                            ordersMessage.textContent = "Ancora nessun ordine";
+                        }
+                    } else {
+                        ordersMessage.textContent = 'Errore durante il recupero degli ordini';
+                        ordersMessage.style.color = 'red';
+                    }
+                } catch (error) {
+                    console.error('Errore durante il recupero degli ordini:', error);
+                    ordersMessage.textContent = 'Errore durante il recupero degli ordini';
+                    ordersMessage.style.color = 'red';
+                }
+            }
+        }
+
+        function initializeWeeklyChart() {
+            var ctx = document.getElementById("myChartWeek");
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["Domenica", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato"],
+                    datasets: [{
+                        data: [
+                            ordersCountByDayOfWeek['domenica'] || 0,
+                            ordersCountByDayOfWeek['lunedì'] || 0,
+                            ordersCountByDayOfWeek['martedì'] || 0,
+                            ordersCountByDayOfWeek['mercoledì'] || 0,
+                            ordersCountByDayOfWeek['giovedì'] || 0,
+                            ordersCountByDayOfWeek['venerdì'] || 0,
+                            ordersCountByDayOfWeek['sabato'] || 0
+                        ],
+                        lineTension: 0,
+                        backgroundColor: 'transparent',
+                        borderColor: '#5E7C50',
+                        borderWidth: 4,
+                        pointBackgroundColor: '#5E7C50'
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: false,
+                                callback: function (value, index, values) {
+                                    return value + ' €'; // Append euro symbol after the value
+                                }
+                            }
+                        }]
+                    },
+                    legend: {
+                        display: false,
+                    },
+                    tooltips: {
+                        callbacks: {
+                            label: function (tooltipItem, data) {
+                                return tooltipItem.yLabel + ' €'; // Append euro symbol after the tooltip value
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+
+
+        function initializeMonthlyChart() {
+            var ctx = document.getElementById("myChartMonth");
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
+                    datasets: [{
+                        data: [
+                            ordersCountByMonth['gennaio'] || 0,
+                            ordersCountByMonth['febbraio'] || 0,
+                            ordersCountByMonth['marzo'] || 0,
+                            ordersCountByMonth['aprile'] || 0,
+                            ordersCountByMonth['maggio'] || 0,
+                            ordersCountByMonth['giugno'] || 0,
+                            ordersCountByMonth['luglio'] || 0,
+                            ordersCountByMonth['agosto'] || 0,
+                            ordersCountByMonth['settembre'] || 0,
+                            ordersCountByMonth['ottobre'] || 0,
+                            ordersCountByMonth['novembre'] || 0,
+                            ordersCountByMonth['dicembre'] || 0
+                        ],
+                        lineTension: 0,
+                        backgroundColor: 'transparent',
+                        borderColor: '#5E7C50',
+                        borderWidth: 4,
+                        pointBackgroundColor: '#5E7C50'
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: false,
+                                callback: function (value, index, values) {
+                                    return value + ' €'; // Append euro symbol after the value
+                                }
+                            }
+                        }]
+                    },
+                    legend: {
+                        display: false,
+                    },
+                    tooltips: {
+                        callbacks: {
+                            label: function (tooltipItem, data) {
+                                return tooltipItem.yLabel + ' €'; // Append euro symbol after the tooltip value
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+
+        async function loadOrderDetailsForChart() {
+            const token = localStorage.getItem('authToken');
+
+            if (token !== null) {  // Check if the token exists
+                try {
+                    const response = await fetch('http://localhost:8080/orderDetails', {
+                        method: 'GET',
+                        headers: {
+                            'Authorization': token
+                        }
+                    });
+
+                    if (!response.ok) {  // Check for HTTP errors
+                        throw new Error('Network response was not ok');
+                    }
+
+                    const details = await response.json();
+                    console.log(details);  // You can remove this in production
+
+                    // Create a map to store the total quantity and product details for each product ID
+                    const productMap = {};
+
+                    details.forEach(detail => {
+                        const productId = detail.product.id;
+                        const quantity = detail.qnt;  // Use 'qnt' instead of 'quantity'
+
+                        // Initialize product entry if not exists
+                        if (!productMap[productId]) {
+                            productMap[productId] = {
+                                totalQuantity: 0,
+                                category: detail.product.category.nome,
+                                venditore: detail.product.venditore,
+                                nome: detail.product.nome
+                            };
+                        }
+
+                        // Accumulate total quantity
+                        productMap[productId].totalQuantity += quantity;
+                    });
+
+                    console.log(productMap);  // You can remove this in production
+
+                    // Transform the productMap into an array of objects
+                    const result = Object.entries(productMap).map(([productId, { totalQuantity, category, venditore, nome }]) => ({
+                        productId,
+                        totalQuantity,
+                        category,
+                        venditore,
+                        nome
+                    }));
+
+                    // Sort the result array by totalQuantity in descending order
+                    result.sort((a, b) => b.totalQuantity - a.totalQuantity);
+
+                    console.log('ORDINATO', result);  // You can remove this in production
+
+                    const tabellareport = document.getElementById('tabellareport')
+
+                    for (let i = 0; i < 10; i++) {
+                        const stringvenditore = result[i].venditore.split('£')
+                        const venditore = stringvenditore[0]
+                        const tr = document.createElement('tr')
+                        tr.innerHTML = `
+                                    <td>${result[i].productId}</td>
+                                    <td>${result[i].nome}</td>
+                                    <td>${result[i].totalQuantity}</td>
+                                    <td>${venditore}</td>
+                                    <td>${result[i].category}</td>
+                `
+                        tabellareport.appendChild(tr)
+                    }
+
+
+                } catch (error) {
+                    console.error('Errore durante il recupero degli ordini:', error);
+                }
+            } else {
+                console.error('Auth token not found');
+            }
+
+
+
+        }
+
+
+
+    </script>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="popup/popup.js"></script>
+    <script src="js/template.js"></script>
+    <script src="https://kit.fontawesome.com/4bea790e60.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,86 @@
+.contenuto {
+    color: #2F3D14;
+}
+
+.contact-header {
+
+    color: #2F3D14;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.contact-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    margin-top: 40px;
+    border: 2px solid #5A3A31;
+    padding: 30px;
+    border-radius: 20px;
+}
+.btn-primary {
+    width: 100%;
+}
+
+.contact-info {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+.map-container {
+    margin-top: 40px;
+    height: 400px;
+    /* Adjust height as needed */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 20px;
+
+
+}
+
+.map-container {
+
+    border: 2px solid #5A3A31;
+    border-radius: 20px;
+
+}
+
+/* #Contattaci {
+    align-items: center;
+} */
+.contact-info a{
+    color: #2F3D14;
+}
+#form-contatti {
+    width: 100%;
+    /* height: 40px; */
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 15px auto;
+    padding: 12px;
+    border: 2px solid #5a3a3147;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1em;
+}

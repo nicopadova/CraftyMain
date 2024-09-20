@@ -1,0 +1,127 @@
+
+.freccia {
+    background: none;
+}
+
+.freccia:hover {
+    background: none;
+}
+
+.contenutoBello {
+    background-color: #DEDBD2;
+}
+
+.MosaicoContainer {
+    background-color: #5E7C50;
+}
+
+.card {
+    background-color: #DEDBD2;  
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.card .card-img-top {
+    object-fit: cover;
+    height: 200px; /* Specifica l'altezza desiderata */
+    width: 100%;
+}
+
+.titolo {
+    color: #2F3D14 ;
+}
+
+a.btn {
+    color: #DEDBD2;
+}
+
+.carteProdotto {
+    background-color: #DEDBD2;
+    color: #2F3D14;
+    border: none;
+}
+
+.linkTesto {
+    color: #2F3D14 !important;
+}
+
+.fw-bolder {
+    color: #2F3D14;
+}
+
+.linkTesto:hover {
+    color: #5E7C50;
+}
+
+.prezzoScontato {
+    color: #5E7C50;
+}
+
+.saldi {
+    background-color: #b68125;
+}
+
+.prodNuovo {
+    background-color: #5E7C50;
+}
+
+.btn {
+    background-color: #2F3D14;
+}
+
+h3 {
+    color: #2F3D14;
+}
+
+#imgCaroesello1 {
+    height: 90%;
+}
+
+.cardRecensioni {
+    background-color: rgba(255, 255, 255, 0.543);
+    min-height: 300px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#last-reviews{
+    min-height: 500px;
+}
+
+.frecciareview{
+    color: #2F3D14;
+    
+}
+.frecciareview:hover {
+    background: none;
+}
+
+.img-recensioni{
+height: 9rem;
+object-fit: cover;
+width: 200%;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    height: 100vh; 
+}
+
+.bottoneRecensione:hover{
+    background-color: #5e7c5087;
+}
+.testo-nome-ogg,.testo-nome{
+    color: #2F3D14;
+}

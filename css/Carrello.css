@@ -1,0 +1,39 @@
+.carrelloTitolo{
+    color: #2F3D14;
+    margin-top: 2px;
+}
+.carrelloSottotit{
+    color: #DEDBD2;
+}
+.container{
+    color: #DEDBD2;
+}
+.titoloOgg{
+    color: #2F3D14;
+}
+.text-muted-custome{
+    color: #2F3D14;
+}
+.btn-link-numero{
+    width: 110%;
+    
+}
+
+.buttonPagamento{
+    background:#5E7C50;
+    color:#DEDBD2 ;
+    border-color: #2F3D14;
+}
+.form-control{
+    color: #2F3D14;
+}
+.buttonAcquisti{
+    color: #2F3D14;
+    border-color: #2F3D14;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

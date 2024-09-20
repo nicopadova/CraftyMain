@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riepilogo ordine</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="popup/popup.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/riepilogoOrdine.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&amp;display=swap" rel="stylesheet">
+</head>
+
+<body class="" onload="loadTemplate(),getCarrello()">
+    <header class="my-4">
+
+    </header>
+
+    <div class="contenuto">
+        <div class="container">
+            <h2 class="pt-4" style="color:#2F3D14;">Riepilogo ordine</h2>
+            <div class="row" id="Contattaci">
+                <!-- Contact Form and Information -->
+                <div class="col-md-7 ">
+                    <!-- Contact Form -->
+                    <div class="col">
+                        <div class="card border-2 mb-4 mt-4" style="border-color: #5A3A31;">
+                            <div class="card-body mx-3">
+                                <table class="table table-borderless">
+                                    <tbody id=listaProd>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2">Subtotale</td>
+                                            <td class="text-end" id="Subtotale">€159,98</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">Spedizione</td>
+                                            <td class="text-end">€0.00</td>
+                                        </tr>
+                                        <tr class="fw-bold">
+                                            <td colspan="2" style="color: #2F3D14;">TOTALE</td>
+                                            <td class="text-end" style="color: #2F3D14;" id="Totale">€159,98</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Map -->
+                <div class="col-md-5 col-lg-5 mb-4">
+                    <div class="map-container mt-4 ">
+                        <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" id="mappaMaps"></iframe>
+                    </div>
+                    <div class="map-container mt-4" style="background-color: white;">
+                    <div class="card-body ms-3" >
+                        <h4 class="h6 mt-2">Informazioni di spedizione</h4> 
+                        <br>
+                        <hr>
+                        <h3 class="h6">Indirizzo</h3>
+                        <address> <strong id="nomeSpedizione">John Doe</strong>
+                            <br> <span id="indirizzoSpedizione1">1355 Market St, Suite 900</span><br> <span id="indirizzoSpedizione2">San Francisco, CA
+                            94103</span><br> <abbr title="Telefono">T:</abbr> <span id="numeroTelefono">(123) 456-7890 </span></address>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/4bea790e60.js" crossorigin="anonymous"></script>
+    <script src="popup/popup.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/RiepilogoOrdine.js"></script>
+
+</body>
+
+</html>

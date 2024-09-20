@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Profilo Utente</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="popup/popup.css">
+    <link rel="stylesheet" href="css/profiloUtente.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    
+</head>
+
+<body onload="loadTemplate(),getUserDataForEdit()" class="overflow-x-hidden">
+    <!--HEADER-->
+    <header class="my-4">
+        <!-- Add your header content here -->
+    </header>
+    <div class="contenuto">
+        <p id="message-profile-modifica"></p>
+        <div class="user-profile-container container my-5">
+            <ul class="nav nav-tabs profile-nav-tabs" id="profileTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                        type="button" role="tab" aria-controls="profile" aria-selected="true">Profilo</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="orders-tab" data-bs-toggle="tab" data-bs-target="#orders" type="button"
+                        role="tab" aria-controls="orders" aria-selected="false" onclick="getOrders()">Ordini</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="password-tab" data-bs-toggle="tab" data-bs-target="#password-change"
+                        type="button" role="tab" aria-controls="password" aria-selected="false">Cambia Password</button>
+                </li>
+            </ul>
+            <div class="tab-content profile-content" id="profileTabContent">
+                <div class="tab-pane fade show active mt-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <h3 class="mb-4 titolo-profilo">Informazioni Profilo</h3>
+                    <form id="profileForm" onsubmit="profileEditing(event)">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label-profilo">Nome</label>
+                            <input type="text" class="form-control" id="firstName-edit" placeholder="Nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label-profilo">Cognome</label>
+                            <input type="text" class="form-control" id="lastName-edit" placeholder="Cognome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label-profilo">Email</label>
+                            <input type="email" class="form-control" id="email-edit" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label-profilo"> Riscrivi Email</label>
+                            <input type="email" class="form-control" id="re-email-edit" placeholder="Riscrivi Email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label-profilo">Telefono</label>
+                            <input type="tel" class="form-control" id="phone-edit" placeholder="Telefono" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label-profilo">Indirizzo</label>
+                            <input type="text" class="form-control" id="address-edit" placeholder="Indirizzo" required>
+                        </div>
+                        <button type="submit" class="btn profile-btn-primary">Aggiorna Profilo</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade mt-4" id="orders" role="tabpanel" aria-labelledby="orders-tab">
+                    <h3 class="mb-4 titolo-profilo">I miei Ordini</h3>
+                    <div id="orders-message" class="text-center text-muted"></div>
+                    <table class="table table-hover profile-table" id="orders-table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Data</th>
+                                <th scope="col">Stato</th>
+                                <th scope="col">Azioni</th>
+                            </tr>
+                        </thead>
+                        <tbody id="orders-tbody">
+                            <!-- Ordini caricati dinamicamente qui -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Modal per mostrare i dettagli dell'ordine -->
+                <div class="modal fade" id="orderDetailsModal" tabindex="-1" aria-labelledby="orderDetailsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="background-color: #DEDBD2;">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="orderDetailsModalLabel">Dettagli Ordine</h5>
+                            </div>
+                            <div class="modal-body" id="order-details-body">
+                                <!-- Dettagli dell'ordine caricati dinamicamente qui -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn profile-btn-primary" data-bs-dismiss="modal">Chiudi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade mt-4" id="password-change" role="tabpanel" aria-labelledby="password-tab">
+                    <h3 class="mb-4 titolo-profilo">Cambia Password</h3>
+                    <form id="passwordForm">
+                        <div class="mb-3">
+                            <label for="currentPassword" class="form-label-profilo">Password Attuale</label>
+                            <input type="password" class="form-control" id="currentPassword"
+                                placeholder="Password Attuale" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newPassword" class="form-label-profilo">Nuova Password</label>
+                            <input type="password" class="form-control" id="newPassword" placeholder="Nuova Password"
+                                required>
+                            <small id="passwordHelp" class="form-text text-muted">La password deve contenere almeno 6
+                                caratteri.</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label-profilo">Conferma Nuova Password</label>
+                            <input type="password" class="form-control" id="confirmPassword"
+                                placeholder="Conferma Nuova Password" required>
+                        </div>
+                        <div id="passwordError" class="text-danger mb-3"></div>
+                        <button type="submit" class="btn profile-btn-primary">Cambia Password</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer class="mt-5">
+        <!-- Add your footer content here -->
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="popup/popup.js"></script>
+    <script src="js/template.js" defer></script>
+    <script src="https://kit.fontawesome.com/4bea790e60.js" crossorigin="anonymous"></script>
+    <script src="js/profiloUntente.js"></script>
+    
+</body>
+
+</html>

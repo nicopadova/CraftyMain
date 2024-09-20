@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="popup/popup.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&amp;display=swap" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden">
+  <header class="my-4">
+    <div class="lg_header">
+      <section class="layout">
+        <div><a href="Home.html"><img class="w-75 h-auto" src="assets/img/icons/logocrafty.png" alt=""></a></div>
+        <div class="w-100">
+          <div class="custom_input w-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg_icon bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+              </path>
+            </svg>
+            <form id="formLg" action="" class="w-100">
+              <input class="input" type="text" id="barLg" placeholder="">
+            </form>
+          </div>
+        </div>
+        <div class="text-end">
+          <i class="fa-solid fa-user fa-2xl" style="color: #b68125;" data-bs-toggle="modal"
+            data-bs-target="#myModal"></i>
+        </div>
+        <div class="text-end">
+          <a href="Carrello.html"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #b68125" ;></i></a>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="row  justify-content-center mt-4 ">
+          <ul class="nav col-12  mb-2 justify-content-center align-items-center mb-md-0 d-flex flex-nowrap">
+            <a class="btn btn-lg rounded-pill ms-3" href="Catalogo.html?category=1" role="button">
+              Arredamento
+            </a>
+            <a class="btn btn-lg rounded-pill mx-3" href="Catalogo.html?category=2" role="button">
+              Gioielli
+            </a>
+            <a class="btn btn-lg rounded-pill mx-3" href="Catalogo.html?category=3" role="button">
+              Abiti Uomo
+            </a>
+            <a class="btn btn-lg rounded-pill mx-3" href="Catalogo.html?category=4" role="button">
+              Abiti Donna
+            </a>
+            <a class="btn btn-lg rounded-pill me-3" href="Catalogo.html?category=7" role="button">
+              Giocattoli
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sm_header">
+      <div class="container container-fluid text-center ">
+        <div class="row justify-content-evenly align-items-center">
+          <div class="col-4">
+            <a href="Home.html"><img class="w-100 h-100" src="assets/img/icons/logocrafty.png" alt=""></a>
+          </div>
+          <div class="col-2">
+            <i class="fa-solid fa-user fa-2xl" style="color: #b68125;" data-bs-toggle="modal"
+              data-bs-target="#myModal"></i>
+          </div>
+          <div class="col-2">
+            <a href="Carrello.html"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #b68125" ;></i></a>
+          </div>
+          <div class="col-2">
+            <div class="dropdown">
+              <a class="" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                  class="fa-solid fa-bars fa-2xl" style="color: #b68125"></i></a>
+              <ul class="dropdown-menu dropdown-menu-lg-end my-4" style="color: #2F3D14;">
+                <li><a class="dropdown-item" href="Catalogo.html?category=1">Arredamento</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="Catalogo.html?category=2">Gioielli</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="Catalogo.html?category=3">Abiti Uomo</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="Catalogo.html?category=4">Abiti Donna</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="Catalogo.html?category=7">Giocattoli</a></li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-11">
+            <div class="custom_input w-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" class="svg_icon bi-search" viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                </path>
+              </svg>
+              <form action="" id="formSm" class="w-100">
+                <input class="input" type="text" id="barSm" placeholder="">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="main-accesso">
+              <input class="input-accesso" type="checkbox" id="chk" aria-hidden="true">
+
+              <div class="signup" id="signup-section">
+                <div id="form-signup">
+                  <form onsubmit="signup(event)">
+                    <label class="label-accesso" for="chk" aria-hidden="true">Registrati</label>
+                    <div id="utente-fields">
+                      <input class="input-accesso" id="nome-signup" type="text" name="nome" placeholder="Nome"
+                        required="">
+                      <input class="input-accesso" id="cognome-signup" type="text" name="cognome" placeholder="Cognome"
+                        required="">
+                      <input class="input-accesso" id="telefono-signup" type="tel" name="telefono"
+                        placeholder="Telefono" required="">
+                      <input class="input-accesso" id="email-signup" type="email" name="email" placeholder="Email"
+                        required="">
+                      <input class="input-accesso" id="re-email-signup" type="email" name="confirm_email"
+                        placeholder="Conferma Email" required="">
+                      <input class="input-accesso" id="password-signup" type="password" name="pswd"
+                        placeholder="Password" required="">
+                      <input class="input-accesso" id="re-password-signup" type="password" name="confirm_pswd"
+                        placeholder="Conferma Password" required="">
+                      <input class="input-accesso" id="indirizzo-signup" type="text" name="indirizzo"
+                        placeholder="Indirizzo" required="">
+                    </div>
+                    <button class="tasto-accesso" type="submit">Registrati</button>
+                  </form>
+                </div>
+                <p id="message-signup"></p>
+                <pre id="userData"></pre>
+                <p id="message-profile"></p>
+                <button class="tasto-accesso" id="logout-section" onclick="logout(event)"
+                  style="display: none;">Logout</button>
+
+                <p id="message"></p>
+              </div>
+
+              <div class="login" id="login-section">
+                <form onsubmit="login(event)">
+                  <label class="label-accesso" for="chk" aria-hidden="true">Accedi</label>
+                  <input class="input-accesso" id="email" type="email" name="email" placeholder="Email" required="">
+                  <input class="input-accesso" id="password" type="password" name="pswd" placeholder="Password"
+                    required="">
+                  <a class="password-dimenticata" href="#">Password dimenticata</a>
+                  <button class="tasto-accesso" type="submit">Accedi</button>
+                </form>
+                <p id="message-login"></p>
+              </div>
+
+              <!-- Logout Button (Initially hidden) -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="contenuto">
+    aaa
+  </div>
+
+
+
+  <footer>
+    <div class="row row-cols-2 row-cols-md-4 pt-4 footer_tab">
+      <div class="col-3 mb-3 align-self-center text-center">
+        <a href="#" class="mb-3 " id="tornasu">
+          <i class="fa-solid fa-circle-arrow-up fa-2xl" style="color: #b68125;"></i>
+        </a>
+      </div>
+
+      <div class="col mb-3">
+        <h5 class="titolofooter">Area personale</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="Carrello.html" class="nav-link p-0 ">Carrello</a></li>
+          <li class="nav-item mb-2"><a href="profiloUtente.html" class="nav-link p-0 ">Profilo</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5 class="titolofooter">Info</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="FAQ.html" class="nav-link p-0 ">FAQ</a></li>
+          <li class="nav-item mb-2"><a href="LavoraConNoi.html" class="nav-link p-0 ">Lavora con noi</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5 class="titolofooter">Chi Siamo</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="Chi-Siamo.html" class="nav-link p-0 ">Scopri Crafty</a></li>
+          <li class="nav-item mb-2"><a href="Contattaci.html" class="nav-link p-0 ">Contatti</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div>
+      <div class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
+        <div class="col-md-4 d-flex align-items-center mx-4">
+          <span class="mb-3 mb-md-0 ">© 2024 Crafty, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled mx-4">
+          <li class="ms-3"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #b68125;"></i></li>
+          <li class="ms-3"><i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #b68125;"></i></li>
+          <li class="ms-3"><i class="fa-brands fa-square-instagram fa-2xl" style="color: #b68125;"></i></li>
+        </ul>
+      </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/4bea790e60.js" crossorigin="anonymous"></script>
+  <script src="popup/popup.js"></script>
+</body>
+
+</html>

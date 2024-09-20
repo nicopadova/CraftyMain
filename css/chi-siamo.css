@@ -1,0 +1,47 @@
+.contenuto {
+    color: #2F3D14;
+}
+.hero h1 {
+    color: #5A3A31;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+.hero {
+    text-align: center;
+    padding: 30px;
+}
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #5A3A31;
+}
+.section-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.section-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section-content-text {
+    padding: 20px;
+}
+.team-member img {
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    padding: 5px;
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+.team-member {
+    text-align: center;
+}
+.team-member h3{
+    color: #5A3A31;
+}
+.artigiani{
+    margin-bottom: 30px;
+}
